@@ -1,0 +1,32 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: chai-app
+spec:
+  replicas: 3
+  selector:
+    matchLabels:
+      app: chai-app
+  template:
+    metadata:
+      labels:
+        app: chai-app
+    spec:
+      containers:
+      - name: chai-app
+        image: amitabhdevops/chai-devops:latest
+        ports:
+        - containerPort: 80
+        env:
+        - name: VITE_GEMINI_API
+          valueFrom:
+            secretKeyRef:
+              name: chai-app-secret
+              key: VITE_GEMINI_API
+        resources:
+          requests:
+            memory: "64Mi"
+            cpu: "50m"
+          limits:
+            memory: "256Mi"
+            cpu: "200m"

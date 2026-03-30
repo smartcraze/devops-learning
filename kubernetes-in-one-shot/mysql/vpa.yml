@@ -1,0 +1,12 @@
+kind: VerticalPodAutoScaler
+apiVersion: autoscaling.k8s.io/v1
+metadata:
+  name: mysql-vpa
+  namespace: mysql
+spec: 
+  targetRef:
+    kind: StatefulSet
+    apiVersion: apps/v1
+    name: mysql-statefulset
+  updatePolicy:
+    updateMode: "Auto"

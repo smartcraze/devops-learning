@@ -1,0 +1,19 @@
+# Terraform state (contains sensitive infra details)
+*.tfstate
+*.tfstate.*
+
+# Terraform provider binaries
+.terraform/
+
+# Variable files that may contain secrets
+*.tfvars
+*.tfvars.json
+
+# OS files
+.DS_Store
+
+# IDE
+.idea/
+.vscode/
+*.swp
+*.swo
