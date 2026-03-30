@@ -1,0 +1,11 @@
+apiVersion: v1
+kind: Service
+metadata:
+  name: slotify-service
+spec:
+  type: ClusterIP
+  selector:
+    app: slotify
+  ports:
+    - port: 80
+      targetPort: 3000

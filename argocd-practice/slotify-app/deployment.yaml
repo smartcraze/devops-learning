@@ -1,0 +1,25 @@
+apiVersion: apps/v1
+kind: Deployment
+metadata:
+  name: slotify-app
+spec:
+  replicas: 2
+  selector:
+    matchLabels:
+      app: slotify
+  template:
+    metadata:
+      labels:
+        app: slotify
+    spec:
+      containers:
+      - name: slotify
+        image: smartcraze/slotify:latest
+        ports:
+        - containerPort: 3000
+
+        envFrom:
+        - configMapRef:
+            name: slotify-config
+        - secretRef:
+            name: slotify-secret
