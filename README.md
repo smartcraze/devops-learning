@@ -67,7 +67,7 @@
 | [batch-10-scripts/install_packages.sh](Shell-Scripting-For-DevOps/batch-10-scripts/install_packages.sh) | Automate package installation |
 | [batch-10-scripts/system_details.sh](Shell-Scripting-For-DevOps/batch-10-scripts/system_details.sh) | Print system info (CPU, RAM, disk) |
 | [batch-10-scripts/create_simple_file.sh](Shell-Scripting-For-DevOps/batch-10-scripts/create_simple_file.sh) | File creation automation |
-| [batch-10-scripts/if_file_exisits.sh](Shell-Scripting-For-DevOps/batch-10-scripts/if_file_exisits.sh) | File existence check |
+| [batch-10-scripts/if_file_exists.sh](Shell-Scripting-For-DevOps/batch-10-scripts/if_file_exisits.sh) | File existence check |
 | **`log-files/`** | Sample log files for parsing practice |
 | [log-files/app.log](Shell-Scripting-For-DevOps/log-files/app.log) | Application log sample |
 | [log-files/application.log](Shell-Scripting-For-DevOps/log-files/application.log) | Extended application log |
@@ -228,17 +228,17 @@
 | [applicationsets/chai-app/service.yml](argocd-demos/applicationsets/chai-app/service.yml) | Chai app Service |
 | [applicationsets/chai-app/secret.yml](argocd-demos/applicationsets/chai-app/secret.yml) | Chai app Secret |
 | **`git_generator/`** | Generate apps from Git directory structure |
-| [git_generator/apache/](argocd-demos/git_generator/apache/apache_deployment.yml) | Apache manifests for Git generator |
-| [git_generator/chai-app/](argocd-demos/git_generator/chai-app/deployment.yml) | Chai app manifests |
-| [git_generator/online-shop/](argocd-demos/git_generator/online-shop/deployment.yml) | Online shop manifests |
+| [git_generator/apache/apache_deployment.yml](argocd-demos/git_generator/apache/apache_deployment.yml) | Apache Deployment for Git generator |
+| [git_generator/chai-app/deployment.yml](argocd-demos/git_generator/chai-app/deployment.yml) | Chai app Deployment |
+| [git_generator/online-shop/deployment.yml](argocd-demos/git_generator/online-shop/deployment.yml) | Online shop Deployment |
 | **`image_updater/`** | Automatically update image tags in Git using ArgoCD Image Updater |
 | [image_updater/chai-app/deployment.yml](argocd-demos/image_updater/chai-app/deployment.yml) | Deployment with image updater annotations |
 | [image_updater/chai-app/kustomization.yml](argocd-demos/image_updater/chai-app/kustomization.yml) | Kustomize config for image updates |
 | **`multicluster/`** | Deploy to multiple Kubernetes clusters |
 | [multicluster/online-shop/deployment.yml](argocd-demos/multicluster/online-shop/deployment.yml) | Multi-cluster deployment |
 | **`monitoring/`** | Observability apps managed by ArgoCD |
-| [monitoring/chai-app/](argocd-demos/monitoring/chai-app/deployment.yml) | Monitoring app manifests |
-| [monitoring/online_shop/](argocd-demos/monitoring/online_shop/online_shop_deployment.yml) | Online shop monitoring config |
+| [monitoring/chai-app/deployment.yml](argocd-demos/monitoring/chai-app/deployment.yml) | Monitoring app Deployment |
+| [monitoring/online_shop/online_shop_deployment.yml](argocd-demos/monitoring/online_shop/online_shop_deployment.yml) | Online shop monitoring Deployment |
 | **`ui_approach/`** | Deploy apps from the ArgoCD Web UI |
 | [ui_approach/nginx/nginx_deployment.yml](argocd-demos/ui_approach/nginx/nginx_deployment.yml) | Nginx Deployment via UI |
 | [ui_approach/nginx/nginx_svc.yml](argocd-demos/ui_approach/nginx/nginx_svc.yml) | Nginx Service |
